@@ -1,14 +1,24 @@
 {
   "name": "playwright-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "Playwright test automation with API and UI examples.",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test tests/ui",
+    "test:api": "npx playwright test tests/api",
+    "test:report": "npx playwright show-report",
+    "lint": "npx eslint .",
+    "format": "npx prettier --write ."
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.56.0",
+    "prettier": "^3.0.0"
   }
 }
